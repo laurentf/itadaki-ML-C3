@@ -1,0 +1,92 @@
+# Environnement virtuel
+itadaki_venv/
+venv/
+env/
+ENV/
+
+# Fichiers Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Modèles sauvegardés
+*.pkl
+*.joblib
+*.h5
+*.model
+
+# Données sensibles ou volumineuses (décommentez si nécessaire)
+data/*.csv
+data/*.json
+data/*.parquet
+
+# Logs
+*.log
+logs/
+
+# Cache et fichiers temporaires
+.cache/
+.pytest_cache/
+.coverage
+.nyc_output
+.DS_Store
+Thumbs.db
+
+# IDE et éditeurs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Système d'exploitation
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Variables d'environnement
+.env
+.venv
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Résultats et visualisations temporaires
+plots/
+figures/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+
+# Fichiers de configuration spécifiques
+config.ini
+secrets.yaml 
