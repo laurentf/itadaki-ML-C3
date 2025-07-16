@@ -1,6 +1,6 @@
-Seuils statiques pour bas/medium/haut => mieux de calculer avec 33%/33%/33%
+Seuils statiques pour bas/medium/haut => mieux de calculer avec 33%/33%/33% (on pourra faire un vrai rééquilibrage de classes plus tard)
 
-Utilisation one hot encoding sur suite de mot => explosion mémoire (préférer vecteurs tf-idf ou word bags)
+Utilisation one hot encoding sur suite de mot => explosion mémoire, solution => tf-idf ou word bags (on a choisi tf-idf)
 
 Trop d'itérations au départ dans le RandomizedSearch; c'est scientifique => après 20 essais aléatoires => ~95% de l'optimum possible.
 2/3h vs 10/15min...
@@ -11,7 +11,11 @@ Apres LabelEncoder les labels deviennent des numpy arrays
 
 Il a aussi fallu décoder dans la prédiction et ajouter target_names dans classification_report
 
-RandomizedSearchCV serait bien plus rapide pour 80% des perf mais je veux le max possible donc à voir :)
+sur tf-idf ngramme à 1,1 finalement car on a bien nettoyé + utilisation _
+
+sur tf-idf il a fallu trouver le bon compromis de param pour éviter l'overfitting
+
+RandomizedSearchCV serait bien plus rapide pour 80% des perf mais je veux le max possible donc à voir :) => (on a pris RandomizedSearchCV sur XGBoost)
 
 
 
