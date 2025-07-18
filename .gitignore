@@ -81,11 +81,6 @@ Thumbs.db
 # Résultats et visualisations temporaires
 plots/
 figures/
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.svg
 
 # Fichiers de configuration spécifiques
 config.ini
